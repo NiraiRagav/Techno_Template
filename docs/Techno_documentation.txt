@@ -1,0 +1,84 @@
+# Techno IT Services Web Page – Project Document
+
+## Introduction
+
+The Techno IT Services Web Page is a static website developed to present IT consulting services, business solutions, and company-related information in a structured and visually appealing manner. The design focuses on responsiveness, usability, and a professional interface suitable for corporate environments.
+
+## Project Objective
+
+The main objective of this project is to design and develop a responsive IT services website that clearly presents business offerings, company details, and contact information for users across multiple devices.
+
+## Technologies Used
+
+The project is developed using the following technologies:
+
+* HTML for structure
+* SCSS (CSS) for styling with variables and nesting
+* Bootstrap 3 for responsive layout and grid system
+* Font Awesome for icons
+
+## Description of the Website
+
+The website consists of multiple sections that together form a complete business webpage:
+
+* Pre-header with contact and social media links
+* Navigation bar for easy access to sections
+* Hero/consult section with key messaging
+* Services section displaying offerings
+* About section with company details
+* Contact section with call-to-action
+* Testimonial section for customer feedback
+* Blog section for latest articles
+* Footer with company and additional information
+
+## Features
+
+* Fully responsive design across devices
+* Clean and professional UI
+* Interactive elements such as modal and popover
+* Structured service and content sections
+* Font Awesome icons for better visualization
+* Bootstrap-based layout system
+* SCSS for maintainable styling
+
+## External References Used
+
+* Bootstrap 3 Documentation
+* jQuery Library
+* W3Schools templates and examples
+
+These were used for learning and implementing layout, responsiveness, and UI components.
+
+## Working of the Website
+
+* The page begins with a pre-header and navigation menu
+* A hero section highlights IT services with action buttons
+* Service sections display offerings in structured cards
+* About section explains company details
+* Popovers and modals provide interactive information
+* Testimonials and blogs add supporting content
+* Contact section allows user engagement
+* Footer contains additional links and company details
+
+## Design Approach
+
+The design follows a modern IT company style using Bootstrap 3 for layout and responsiveness. SCSS is used for better code organization through variables and nested styling. Custom CSS enhances the appearance, spacing, and colors. Icons are used to improve visual clarity.
+
+## Limitations
+
+* Static frontend only
+* No backend or database integration
+* No dynamic data handling
+* Forms are not connected to server-side processing
+
+## Future Improvements
+
+* Integration with backend and database
+* Functional contact and booking forms
+* Dynamic blog system
+* Authentication and user management
+* Advanced animations and UI improvements
+
+## Conclusion
+
+The Techno IT Services Web Page is a frontend project that demonstrates responsive web design, structured layout, and basic interactivity using Bootstrap 3 and SCSS. It serves as a strong foundation for developing more advanced full-stack web applications.
