@@ -1,0 +1,711 @@
+// <!-- ROOT-->
+$whiteclr:#fff;
+$blackclr:#000;
+$darkblack:#151515;
+$greyclr:#282424;
+$blueclr:#0c5adb;
+$ashclr:#999999;
+$bordergrey:#ebebeb;
+$footerbg:#111a3a;
+$greybg:#eff2f7;;
+$blue-shadow:#abb7db;
+$font-size:15px;
+$grey-text:#747474;
+$darkblue:#102c87;
+
+// <!-- Font Declaration-->
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'Poppins';
+    font-size: $font-size;
+    color:$grey-text;
+    line-height: 26px;
+    .pre-header, .header,.service{
+        margin:0px -15px;
+    }
+    .text-blue{
+        color:$blueclr;
+    }
+    .text-white{
+        color:$whiteclr;
+    }
+    .blue-bg{
+        background: $blueclr;
+    }
+    .align-right{
+        text-align: right;
+    }
+    .align-center{
+        text-align: center;
+    }
+    .caps{
+        text-transform: capitalize;
+    }
+    .uppercase{
+        text-transform: uppercase;
+    }
+    .custom-button{
+        background: $blueclr;
+        padding:15px 30px;
+        font-size:$font-size+2px;
+        margin:15px 10px;
+        &:hover{
+            background-color: $whiteclr;
+            border:1px solid $blueclr;
+            color:$blueclr;
+        }
+    }
+    .pre-title{
+        color:$greyclr;
+        font-size: 22px;
+        line-height:29px;
+        font-weight: 600;
+        margin-bottom: 3px;
+    }
+    .shadow{
+        box-shadow: 1px 1px 10px $blue-shadow;
+    }
+    .heading{
+        color:$blueclr;
+        text-transform: uppercase;
+        font-size: $font-size+2px;
+        font-weight: 500;
+        letter-spacing: 5px;
+    }
+    .subheading{
+        font-size:$font-size+28px;
+        font-weight: 600;
+        color:$blackclr;
+        text-transform: capitalize;
+    }
+}
+// .custom-container{
+//     width:1584px;
+// }
+
+// <!-- Header Section start here-->
+.pre-header{
+    font-size: $font-size +(-1px);
+    background: $blueclr;
+    color:$whiteclr;
+    padding: 15px 0px;
+    .row{
+        margin: 0px;
+    }
+    span{
+        margin-right:15px;
+        a{
+            font-size: $font-size+1px;
+            text-decoration: none;
+            color:$whiteclr;
+            &:hover{
+                color:$footerbg;
+            }
+        }
+    }  
+}
+.header{
+    .custom-navbar{
+        margin-bottom: 0px;
+        border-radius: 0px;
+        padding: 10px 0px;
+        background: $whiteclr;
+        border-color:$whiteclr;
+        font-size: 17px;
+        .website-name{
+            padding:7px 15px;
+        }
+        li a{
+            padding: 15px 25px;
+            color:$greyclr;
+            &:hover{
+                color:$whiteclr;
+                background-color: $blueclr;
+            }
+        }
+    }
+}
+// <!-- Header Section end here-->
+
+// <!-- Consult Section start here-->
+  .consult{
+    padding:0px;
+    margin: 0px -15px;
+    background: url('../images/slider14.jpg') no-repeat 0px -124px / 100%;
+    text-align: center;
+    .page{
+        height: 570px;
+        padding-top:100px;
+    }
+    h1{
+        font-size: $font-size+50px;
+        font-weight: bold;
+    }
+    p{
+        font-size: $font-size+5px;
+        padding:20px 0px;
+    }
+    h2{
+        font-size: $font-size+25;
+    }
+}
+// <!-- Consult Section end here-->
+
+// <!-- We Offer Section start here-->
+.we-offer{
+    margin:80px auto;
+    .offer{
+        text-align: center;
+        padding:20px;
+        transition:1s;
+        &:hover {
+            box-shadow: 5px 5px 10px $blue-shadow; 
+        }
+        p{
+            margin:10px 0px;
+            padding:2px 15px;
+        }
+        .custom-button{
+            margin: 20px 10px;
+            background-color: $whiteclr;
+            border:1px solid $blueclr;
+            color: $blueclr;
+            border-radius: 35px;
+            &:hover{
+                background-color: $blueclr;
+                color:$whiteclr;
+            }
+        }
+    }
+}
+// <!-- We Offer Section ends here-->
+
+// <!-- About Section starts here-->
+.about-us{
+    margin:80px auto;
+    padding: 0px;
+    .experience img {
+        width: 100%;
+        height: 617px;
+        padding: 0px 30px;
+    }
+    .about-exp{
+        h2{
+            font-size:$font-size+26px;
+            color:$darkblack;
+            font-weight: 600;
+            .text-blue::after {
+                content: ""; 
+                display: inline-block;
+                width: 8px;            
+                height: 8px;    
+                background-color:$blueclr;
+                margin-left: 1px;      
+                vertical-align: baseline;
+            }
+        }
+        p{
+            font-size: $font-size +7px;
+            margin:40px 0px;
+        }
+        .subtext{
+            border-left:1px solid $bordergrey;
+            p{
+                font-size:$font-size+1px;
+                margin: 15px 20px;
+            }
+        }
+    }
+    .custom-button{
+        margin-left: 20px;
+    }
+    .popover {
+        max-width: 500px;
+        width: auto;
+    }
+}
+// <!-- About Section ends here-->
+
+// <!-- Service Section start here-->
+.service{
+    background: url('../images/bg2.jpg') no-repeat 0px 0px / 100%;
+    h2{
+        padding: 160px 10px;
+        font-size: $font-size+30px;
+        line-height: 60px;
+    }
+}
+.service-section{
+    margin: -120px auto;
+    .serv{
+        padding: 20px 19px;
+        border-radius: 5px;
+        h3{
+            font-size: $font-size+8px;
+            color:$whiteclr;
+        }
+        p{
+            line-height: 26px;
+            margin: 10px 0px;
+        }
+    }
+}
+// <!-- Service Section ends here-->
+
+// <!-- Our Service Section start here-->
+.our-services{
+    margin-top:200px;
+    text-align: center;
+    .our-serv{
+        border:1px solid $bordergrey;
+        text-align: left;
+        margin-top: 40px;
+        border-radius: 5px;
+        &:hover {
+            border: 1px solid $ashclr;
+        }
+        img{
+            width:100%;
+        }
+        .card{
+            padding: 41px 20px;
+            padding-bottom: 20px;
+            position: relative;
+            img{
+                width: 23%;
+                border-radius: 5px;
+                position: absolute;
+                top: -49px;
+                left: 17px;
+            }
+            a{
+                color:$blueclr;
+            }
+        }
+    }
+}
+// <!-- Contact Section start here-->
+.contact-us{
+    background: url('../images/cn-bg.jpg') no-repeat 0px 0px / 130%;
+    padding-top: 100px;
+    margin:100px -15px;
+    img{
+        width:100%;
+        animation: imageFloat 3s ease-in-out infinite 0.8s;
+    }
+    .contact-details{
+        padding-top: 120px;
+        .num{
+            font-size:$font-size+15px;
+            font-weight: 500;
+            display: inline-block;
+            animation: phonePop 3s ease-in-out infinite 0.8s;
+        }
+        h2{
+            font-size: $font-size+25px;
+            font-weight: 600;
+            line-height: 50px;
+            display: inline-block;
+            animation: phonePop 3s ease-in-out infinite 0.8s;
+        }
+        p{
+            margin: 20px 0px;
+            display: inline-block;
+            animation: phonePop 3s ease-in-out infinite 0.8s;
+        }
+        .custom-button{
+            background-color: $whiteclr;
+            margin: 15px 0px;
+            animation: imageFloat 3s ease-in-out infinite 0.8s;
+            &:hover{
+                border:1px solid $blueclr;
+                background-color: $darkblue;
+                color:$whiteclr;
+            }
+        }
+    }
+}
+// <!-- Contact Section ends here-->
+
+// <!-- Testimonial Section start here-->
+.testimonial{
+    text-align: center;
+    .customer-review{
+        margin:60px auto;
+    }
+    .review{
+        text-align: left;
+        clip-path: polygon(22% -4%, 100% 0%, 100% 100%, 2% 117%);
+        margin-left: -168px;
+        padding: 40px 34px 73px 190px;
+        .info{
+            border-left:2px solid $whiteclr;
+            padding-left:20px;
+            h3{
+                font-size: $font-size+10px;
+                font-weight: 500;
+            }
+            h4{
+                font-weight: 400;
+                font-size: $font-size;
+                margin-top:0px;
+            }
+        }
+        p{
+            font-size: $font-size+3px;
+            line-height: 29px;
+            margin-top: 25px;
+            font-weight: 400;
+        }
+        span.ratings i {
+            font-size: $font-size+6px;
+            margin-top: 5px;
+        }
+        .quotes{
+            display: block;
+            font-size: 45px;
+            padding-top: 20px;
+        }
+    }
+}
+// <!-- Testimonial Section ends here-->
+
+// <!-- Blog Post Section start here-->
+.blog{
+    margin:110px -15px;
+    margin-bottom: 0px;
+    background-color: $greybg;
+    padding:80px 0px;
+    .blog-post{
+        border:1px solid $bordergrey;
+        text-align: left;
+        margin-top: 40px;
+        border-radius: 5px;
+        background:$whiteclr;
+        img{
+            width:100%;
+        }
+        .card{
+            padding: 25px 20px;
+            padding-bottom: 20px;
+            position: relative;
+            img{
+                width: 23%;
+                border-radius: 5px;
+                position: absolute;
+                top: -49px;
+                left: 17px;
+            }
+            a{
+                color:$ashclr;
+            }
+        }
+    }
+}
+// <!-- Blog Post Section ends here-->
+
+// <!-- Footer Section start here-->
+.footer{
+    background-color: $footerbg;
+    color: $whiteclr;
+    margin: 0px -15px;
+    .footer-row{
+        padding:80px 0px;
+        h3{
+            font-weight: 500;
+            font-size:$font-size+7px;
+            padding-bottom:7px;
+        }
+        .company{
+            img{
+                width:15%;
+                margin-bottom: 8px;
+            }
+            .title{
+                font-size: 30px;
+                font-weight: 600;
+                &:hover{
+                    color:$whiteclr;
+                }
+            }
+            p{
+                padding:20px 0px;
+                font-size:$font-size+(-1px);
+            }
+            .social{
+                margin:0px 6px;
+            }
+            a{
+                text-decoration: none;
+                color:$whiteclr;
+                &:hover{
+                    color:$blueclr;
+                }
+            }
+        }
+        .services{
+           ul {
+                list-style: none;
+                padding-left: 5px;
+                padding:10px 0px;
+                li{
+                    padding-bottom:6px;
+                }
+            }
+            ul li::before {
+                content: "-";
+            }
+            a{
+                text-decoration: none;
+                color:$whiteclr;
+                &:hover{
+                    color:$blueclr;
+                }
+            }
+        }
+        .address{
+            p{
+                padding:5px 0px;
+            }
+        }
+        .posts{
+            .border{
+                padding: 15px 0px;
+                border-bottom: 1px solid $ashclr;
+            }
+            a{
+                color:$whiteclr;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            img{
+                width:80px;
+                padding-right:5px;
+            }
+            p{
+                color:$ashclr;
+            }
+            .post1{
+                padding-top:14px;
+            }
+        }
+    }
+    .bottom-row{
+        padding:15px 0px;
+        border-top:1px solid $grey-text;
+        a{
+            color:$whiteclr;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+// <!-- Footer Section ends here-->
+
+ @media (min-width:320px) and (max-width:767px){
+    body{
+        padding: 0px;
+        font-size: 14px;
+        .custom-button{
+            padding: 10px 17px;
+            font-size: 15px;
+            margin: 9px 4px;
+        }
+        .heading{
+            font-size:$font-size;
+        }
+        .subheading{
+            font-size:$font-size+14px;
+            margin-top: 15px;
+        }
+    }
+    .pre-header{
+        margin:0px;
+        padding: 13px;
+        span {
+            margin-right: 15px;
+            display: inline-block;
+            padding: 5px;
+        }
+        .align-right{
+            text-align:left;
+        }
+    }
+    .header {
+        .custom-navbar{
+            padding:10px 0px;
+            .toggle{
+                background-color: $greyclr;
+            }
+            .border{
+                border:0px;
+            }
+            ul{
+                padding:6px;
+            }
+            li{
+                width:100%;
+                a{
+                    padding:7px 0px;
+                    font-size: $font-size+(-1px);
+                }
+            }
+        }
+    }
+    .consult{
+        background: url(../images/slider14.jpg) no-repeat -207px -50px / 247%;
+        .page{
+            height:300px;
+            padding-top: 30px;
+        }
+        h1{
+            font-size: $font-size+10px;
+            line-height: 31px;
+        }
+        p{
+            font-size: $font-size;
+            padding: 2px 0px;
+            line-height:21px;
+        }
+    }
+    .we-offer{
+        margin: 0px;
+        padding: 0px;
+        .offer{
+            margin:20px 0px;
+        }
+    }
+    .about-us{
+        margin:0px;
+        padding:0px;
+        .experience img{
+            padding:0px;
+            height:377px;
+        }        
+        .about-exp {
+            h2{
+                font-size:$font-size+6px;
+                .text-blue::after { 
+                    width: 5px;
+                    height: 5px;
+                }    
+             }
+            p {
+                font-size: $font-size+2px;
+                margin: 20px 0px;
+            }
+            .subtext p{
+                font-size:$font-size+(-1px);
+                margin: 5px 20px;
+            }
+        }
+    }
+    .service{
+        h2{
+            font-size: $font-size;
+            padding: 61px 5px;
+            line-height: 22px;
+        }
+    }
+    .service-section{
+        margin:-77px auto;
+        .serv{
+            margin:20px 0px;
+            h3{
+                font-size: $font-size+5px;
+                line-height:23px;
+            }
+        }
+    }
+    .our-services{
+        margin-top: 100px;
+        .our-serv{
+            margin-top:25px;
+            .card{
+                padding: 27px 20px;
+                img{
+                    top:-29px;
+                } 
+            }
+        }
+        
+    }
+    .contact-us{
+        background: url(../images/cn-bg.jpg) no-repeat 0px 0px / 280%;
+        padding-top: 25px;
+        margin: 50px -15px;
+        img{
+            width: 75%;
+        }
+        .contact-details{
+            padding-top:0px;
+            .num{
+            font-size: 15px;
+            }
+            h2{
+                font-size: 30px;
+                line-height: 25px;
+                margin-top:5px;
+            }
+            p{
+                margin: 10px 0px
+            }
+            .custom-button{
+                margin: 4px 0px;
+            }
+        }
+    }
+    .testimonial{
+        img{
+            width:100%;
+        }
+        .review{
+            clip-path:none;
+            padding:10px;
+            margin-left:0px;
+            margin-top:10px;
+            .info h3{
+                font-size:$font-size+3px;
+            }
+            p{
+                font-size:$font-size+(-1px);
+                line-height: 22px;
+            }
+        }
+    }
+    .blog{
+        margin: 0px -15px;
+    }
+    .footer{
+        .footer-row{
+            padding: 40px 0px;
+        }
+    }
+}
+@keyframes imageFloat {
+    0%, 100% { 
+    transform: translateY(0);
+    }
+    50% { 
+    transform: translateY(-15px); 
+    }
+}
+@keyframes phonePop {
+    0%, 100% { 
+        transform: scale(1); opacity: 1;
+    }
+    50% { 
+        transform: scale(1.05); opacity: 0.8; 
+    }
+}
+
